@@ -1,0 +1,19 @@
+// given array return indices of the item which sums up the given target.(In this actually there was no array. they had given string of comma seprate numbers, i failed to convert this in array)
+
+let arr = [1, 3, 4, 5, 7, 8];
+let target = 9;
+let arrObj = {};
+let resultArray = [];
+
+for(let index = 0; index < arr.length; index++){
+  arrObj[arr[index]] = index;
+}
+
+for(let key in arrObj){
+  let remainder = target - parseInt(key);
+  if(arrObj[remainder] !== undefined){
+    resultArray.push([arrObj[key], arrObj[remainder]])
+  }
+}
+console.log(arrObj)
+console.log(resultArray)
