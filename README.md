@@ -1,2 +1,2 @@
 # MyLearnings
-Primarily created for learnings things by doing
+Primarily created for learning things by doing
